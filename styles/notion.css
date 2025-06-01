@@ -124,7 +124,7 @@
   line-height: 1.5;
   font-style: italic;
   font-size: 1.2em;
-  border-left: 4px solid #67bdfc;
+  border-left: 4px solid var(--muted-text-color);
 }
 
 .notion-h1,
@@ -134,6 +134,7 @@
 }
 
 .notion-callout {
+  background: var(--section-bg-color); /* Changed to use section background color */
   margin: 0.75em 0;
 }
 
@@ -216,7 +217,7 @@
 }
 
 .notion-code {
-  background: rgba(249, 250, 251, 1);
+  background: var(--section-bg-color);
   border: 1px solid rgba(229, 231, 235, 1);
   border-radius: 0.375rem;
 }
@@ -358,7 +359,7 @@
 }
 
 .notion-header {
-  background: hsla(0, 0%, 100%, 0.8);
+  background: hsla(38, 40%, 95%, 0.8); /* Using HSL values from --bg-color */
   backdrop-filter: saturate(180%) blur(16px);
 }
 
