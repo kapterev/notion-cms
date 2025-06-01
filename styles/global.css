@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Overpass:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Overpass:wght@400;600&family=Playfair+Display:wght@600&display=swap');
 
 :root {
   --bg-color: #ffffff;
-  --section-bg-color: #f5f5f5;
   --text-color: #232323;
-  --muted-text-color: #666666;
   --accent-color: #ff006e;
-  --accent-hover-color: #d6005e;
+  --muted-text-color: #666666;
+  --section-bg-color: #f5f5f5;
+  --link-hover-color: #d6005e;
 }
 
 * {
@@ -18,8 +18,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Manrope', sans-serif;
-  background-color: var(--bg-color);
   color: var(--text-color);
+  background-color: var(--bg-color);
   overflow-x: hidden;
 }
 
@@ -30,25 +30,25 @@ a {
 }
 
 a:hover {
-  color: var(--accent-hover-color);
+  color: var(--link-hover-color);
 }
 
 /* Headings */
 
 h1,
 .notion h1 {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
   font-weight: 600;
-  font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--text-color);
 }
 
 h2,
 .notion h2 {
-  font-family: 'Overpass', sans-serif;
-  font-weight: 600;
+  font-family: 'Manrope', sans-serif;
   font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 0.75rem;
   color: var(--text-color);
 }
@@ -56,8 +56,8 @@ h2,
 h3,
 .notion h3 {
   font-family: 'Overpass', sans-serif;
-  font-weight: 600;
   font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   color: var(--text-color);
 }
@@ -66,7 +66,6 @@ h3,
 
 p,
 .notion p {
-  font-family: 'Manrope', sans-serif;
   font-size: 1.125rem;
   line-height: 1.75;
   margin-bottom: 1.25rem;
@@ -81,46 +80,26 @@ ol,
 .notion ol {
   padding-left: 2rem;
   margin-bottom: 1.25rem;
+  color: var(--text-color);
 }
 
 li {
   margin-bottom: 0.5rem;
 }
 
-/* Buttons */
-
-button,
-.notion a.notion-link {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 0.6rem 1.8rem;
-  border: none;
-  border-radius: 6px;
-  background-color: var(--accent-color);
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-button:hover,
-.notion a.notion-link:hover {
-  background-color: var(--accent-hover-color);
-}
-
 /* Blockquotes */
 
 blockquote,
 .notion blockquote {
-  border-left: 4px solid var(--muted-text-color);
-  background-color: var(--section-bg-color);
-  padding: 1rem 1.5rem;
   font-style: italic;
+  border-left: 4px solid var(--muted-text-color);
+  padding: 1rem 1.5rem;
+  background-color: var(--section-bg-color);
+  color: var(--text-color);
   margin: 2rem 0;
 }
 
-/* Code Blocks */
+/* Code blocks */
 
 pre,
 .notion pre {
@@ -142,13 +121,13 @@ pre,
   border-radius: 4px;
 }
 
-/* Nav */
+/* Nav Bar */
 
 nav.notion-navbar {
   background-color: var(--bg-color);
+  border-bottom: 1px solid #eee;
   font-family: 'Overpass', sans-serif;
   font-weight: 500;
-  border-bottom: 1px solid #eee;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -156,10 +135,10 @@ nav.notion-navbar {
 }
 
 nav.notion-navbar a {
-  font-size: 1rem;
   color: var(--text-color);
   margin: 0 1rem;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 nav.notion-navbar a:hover {
@@ -171,10 +150,11 @@ nav.notion-navbar a:hover {
 footer {
   background-color: var(--section-bg-color);
   color: var(--muted-text-color);
-  font-family: 'Manrope', sans-serif;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 3rem;
   border-top: 1px solid #eee;
 }
 
@@ -196,8 +176,8 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #aaa;
   border-radius: 10px;
+  background-color: #aaa;
 }
 
 ::-webkit-scrollbar-track {
