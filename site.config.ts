@@ -8,9 +8,6 @@ export default siteConfig({
   author: 'Alexei Kapterev',
 
   description: 'Talent ✕ Machina  |  Отрытые программы',
-  socialImageTitle: 'Talent ✕ Machina',
-  socialImageSubtitle: 'Открытые программы',
-
   twitter: '',
   github: '',
   linkedin: '',
